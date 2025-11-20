@@ -1,0 +1,1 @@
+com.discordapp.Discord com.github.taiko2k.tauonmb fm.reaper.Reaper com.github.tchx84.Flatseal
