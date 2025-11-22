@@ -1,1 +1,1 @@
-neovim git make python pip npm node cargo ripgrep gnome-boxes zsh picard openrgb qbittorrent
+neovim git make python pip npm node cargo ripgrep gnome-boxes zsh picard openrgb qbittorrent flatpak

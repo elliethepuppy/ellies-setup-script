@@ -10,7 +10,7 @@ echo "Installing packages from flatpak"
 sudo flatpak install $flatpaklist
 
 echo "Installing Lunarvim"
-sudo ./lvim_install.sh
+./lvim_install.sh
 
 echo "Setting lvim background transparency"
 if grep -q "lvim.transparent_window" "$HOME/.config/lvim/config.lua"; then
@@ -18,6 +18,10 @@ if grep -q "lvim.transparent_window" "$HOME/.config/lvim/config.lua"; then
 else
   echo "lvim.transparent_window = true" >> $HOME/.config/lvim/config.lua
 fi
+
+echo "Installing oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 
 echo "Setting EDITOR variable to lvim"
 export EDITOR=$HOME/.local/bin/lvim
